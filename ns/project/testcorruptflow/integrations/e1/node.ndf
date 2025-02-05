@@ -45,9 +45,8 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">poan</value>
-    <value name="createdDate">1738736760403</value>
-    <value name="lastModifiedDate">1738736760403</value>
+    <value name="lastModifiedBy">poan</value>
+    <value name="lastModifiedDate">1738736969195</value>
     <value name="displayName">e1</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -64,6 +63,1209 @@
           <value name="serviceName">pub.date:calculateDateDifference</value>
           <value name="transformerSupport">true</value>
         </record>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">0</value>
+      </record>
+      <record name="/1" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">Flow</value>
+          <value name="groupName">flow</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">debugLog</value>
+          <value name="serviceName">pub.flow:debugLog</value>
+          <value name="transformerSupport">false</value>
+        </record>
+        <value name="nodePathNew">0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">1</number>
+        <null name="mapSet"/>
+        <null name="outputMapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">0</value>
+      </record>
+      <record name="/2" javaclass="com.wm.util.Values">
+        <value name="name">TRY</value>
+        <value name="itemType">CONTROLS</value>
+        <value name="nodePathNew">1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">2</number>
+        <value name="nodePathForDebug">1</value>
+      </record>
+      <record name="/2/0" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">PACKAGES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">sftp</value>
+          <value name="groupName">sftp;1.0</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="description">com.dachser:readFileList</value>
+          <value name="serviceName">com.dachser:readFileList</value>
+          <value name="displayName">readFileList</value>
+        </record>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
+        <Boolean name="serviceReferenceResolved">false</Boolean>
+        <value name="nodePathNew">1.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">3</number>
+        <Boolean name="allowCustomOperations">true</Boolean>
+        <value name="nodePathForDebug">1.0</value>
+      </record>
+      <record name="/2/1" javaclass="com.wm.util.Values">
+        <value name="name">REPEAT</value>
+        <value name="itemType">CONTROLS</value>
+        <record name="in_array" javaclass="com.wm.util.Values">
+          <value name="name">/dirList</value>
+          <value name="type">record</value>
+          <value name="dim">1</value>
+          <Boolean name="isLink">false</Boolean>
+          <value name="field_name">dirList</value>
+          <value name="wrapper_type">IData</value>
+        </record>
+        <value name="nodePathNew">1.1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">4</number>
+        <value name="nodePathForDebug">1.1</value>
+      </record>
+      <record name="/2/1/0" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">String</value>
+          <value name="groupName">string</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <number name="ui_step_index" type="Long">3</number>
+        <value name="nodePathNew">1.1.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">5</number>
+        <null name="mapSet"/>
+        <null name="outputMapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">1.1.0</value>
+      </record>
+      <record name="/2/1/1" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">IF</value>
+        <record name="config" javaclass="com.wm.util.Values">
+          <value name="displayLabel">field_name</value>
+          <value name="toolTipLabel">name</value>
+          <Boolean name="showLeafLabelOnly">true</Boolean>
+          <Boolean name="allowConstantValueInput">true</Boolean>
+          <Boolean name="focusOnLoad">true</Boolean>
+          <Boolean name="specialCharsAllowed">false</Boolean>
+          <Boolean name="resetOnfocusout">true</Boolean>
+          <Boolean name="displayIcon">true</Boolean>
+        </record>
+        <value name="nodePathNew">1.1.1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">6</number>
+        <value name="nodePathForDebug">1.1.1</value>
+      </record>
+      <record name="/2/1/1/0" javaclass="com.wm.util.Values">
+        <value name="name">IF</value>
+        <value name="itemType">CONTROLS</value>
+        <value name="nodePathNew">1.1.1.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">6</number>
+        <value name="nodePathForDebug">1.1.1.0</value>
+      </record>
+      <record name="/2/1/1/0/0" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">TRANSFORM</value>
+        <number name="ui_step_index" type="Long">3</number>
+        <value name="nodePathNew">1.1.1.0.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">7</number>
+        <array name="map" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapDelete" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="transformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.0</value>
+      </record>
+      <null name="/2/1/1/0/0/0"/>
+      <record name="/2/1/1/0/1" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">String</value>
+          <value name="groupName">string</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <number name="ui_step_index" type="Long">3</number>
+        <value name="nodePathNew">1.1.1.0.1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">8</number>
+        <null name="mapSet"/>
+        <null name="outputMapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">1.1.1.0.1</value>
+      </record>
+      <record name="/2/1/1/0/2" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">IF</value>
+        <record name="config" javaclass="com.wm.util.Values">
+          <value name="displayLabel">field_name</value>
+          <value name="toolTipLabel">name</value>
+          <Boolean name="showLeafLabelOnly">true</Boolean>
+          <Boolean name="allowConstantValueInput">true</Boolean>
+          <Boolean name="focusOnLoad">true</Boolean>
+          <Boolean name="specialCharsAllowed">false</Boolean>
+          <Boolean name="resetOnfocusout">true</Boolean>
+          <Boolean name="displayIcon">true</Boolean>
+        </record>
+        <value name="nodePathNew">1.1.1.0.2</value>
+        <number name="nodeIndex" type="Long">2</number>
+        <number name="lineNumberForDebug" type="Long">9</number>
+        <value name="nodePathForDebug">1.1.1.0.2</value>
+      </record>
+      <record name="/2/1/1/0/2/0" javaclass="com.wm.util.Values">
+        <value name="name">IF</value>
+        <value name="itemType">CONTROLS</value>
+        <value name="nodePathNew">1.1.1.0.2.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">9</number>
+        <value name="nodePathForDebug">1.1.1.0.2.0</value>
+      </record>
+      <record name="/2/1/1/0/2/0/0" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">String</value>
+          <value name="groupName">string</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <number name="ui_step_index" type="Long">5</number>
+        <value name="nodePathNew">1.1.1.0.2.0.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">10</number>
+        <null name="mapSet"/>
+        <null name="outputMapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">1.1.1.0.2.0.0</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">IF</value>
+        <record name="config" javaclass="com.wm.util.Values">
+          <value name="displayLabel">field_name</value>
+          <value name="toolTipLabel">name</value>
+          <Boolean name="showLeafLabelOnly">true</Boolean>
+          <Boolean name="allowConstantValueInput">true</Boolean>
+          <Boolean name="focusOnLoad">true</Boolean>
+          <Boolean name="specialCharsAllowed">false</Boolean>
+          <Boolean name="resetOnfocusout">true</Boolean>
+          <Boolean name="displayIcon">true</Boolean>
+        </record>
+        <value name="nodePathNew">1.1.1.0.2.0.1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">11</number>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0" javaclass="com.wm.util.Values">
+        <value name="name">IF</value>
+        <value name="itemType">CONTROLS</value>
+        <value name="nodePathNew">1.1.1.0.2.0.1.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">11</number>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/0" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">String</value>
+          <value name="groupName">string</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">length</value>
+          <value name="serviceName">pub.string:length</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <number name="ui_step_index" type="Long">7</number>
+        <value name="nodePathNew">1.1.1.0.2.0.1.0.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">12</number>
+        <null name="mapSet"/>
+        <null name="outputMapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.0</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/1" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">Math</value>
+          <value name="groupName">math</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">subtractInts</value>
+          <value name="serviceName">pub.math:subtractInts</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <number name="ui_step_index" type="Long">8</number>
+        <value name="nodePathNew">1.1.1.0.2.0.1.0.1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">13</number>
+        <null name="mapSet"/>
+        <null name="outputMapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <Boolean name="xmlMapsetSupported">true</Boolean>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.1</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/2" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">String</value>
+          <value name="groupName">string</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <number name="ui_step_index" type="Long">9</number>
+        <value name="nodePathNew">1.1.1.0.2.0.1.0.2</value>
+        <number name="nodeIndex" type="Long">2</number>
+        <number name="lineNumberForDebug" type="Long">14</number>
+        <null name="mapSet"/>
+        <null name="outputMapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.2</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">IF</value>
+        <record name="config" javaclass="com.wm.util.Values">
+          <value name="displayLabel">field_name</value>
+          <value name="toolTipLabel">name</value>
+          <Boolean name="showLeafLabelOnly">true</Boolean>
+          <Boolean name="allowConstantValueInput">true</Boolean>
+          <Boolean name="focusOnLoad">true</Boolean>
+          <Boolean name="specialCharsAllowed">false</Boolean>
+          <Boolean name="resetOnfocusout">true</Boolean>
+          <Boolean name="displayIcon">true</Boolean>
+        </record>
+        <value name="nodePathNew">1.1.1.0.2.0.1.0.3</value>
+        <number name="nodeIndex" type="Long">3</number>
+        <number name="lineNumberForDebug" type="Long">15</number>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0" javaclass="com.wm.util.Values">
+        <value name="name">IF</value>
+        <value name="itemType">CONTROLS</value>
+        <value name="nodePathNew">1.1.1.0.2.0.1.0.3.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">15</number>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">IF</value>
+        <record name="config" javaclass="com.wm.util.Values">
+          <value name="displayLabel">field_name</value>
+          <value name="toolTipLabel">name</value>
+          <Boolean name="showLeafLabelOnly">true</Boolean>
+          <Boolean name="allowConstantValueInput">true</Boolean>
+          <Boolean name="focusOnLoad">true</Boolean>
+          <Boolean name="specialCharsAllowed">false</Boolean>
+          <Boolean name="resetOnfocusout">true</Boolean>
+          <Boolean name="displayIcon">true</Boolean>
+        </record>
+        <value name="nodePathNew">1.1.1.0.2.0.1.0.3.0.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">16</number>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/0" javaclass="com.wm.util.Values">
+        <value name="name">IF</value>
+        <value name="itemType">CONTROLS</value>
+        <value name="nodePathNew">1.1.1.0.2.0.1.0.3.0.0.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">16</number>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.0</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/0/0" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">String</value>
+          <value name="groupName">string</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <number name="ui_step_index" type="Long">9</number>
+        <value name="nodePathNew">1.1.1.0.2.0.1.0.3.0.0.0.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">17</number>
+        <null name="mapSet"/>
+        <null name="outputMapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.0.0</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/0/1" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">IF</value>
+        <record name="config" javaclass="com.wm.util.Values">
+          <value name="displayLabel">field_name</value>
+          <value name="toolTipLabel">name</value>
+          <Boolean name="showLeafLabelOnly">true</Boolean>
+          <Boolean name="allowConstantValueInput">true</Boolean>
+          <Boolean name="focusOnLoad">true</Boolean>
+          <Boolean name="specialCharsAllowed">false</Boolean>
+          <Boolean name="resetOnfocusout">true</Boolean>
+          <Boolean name="displayIcon">true</Boolean>
+        </record>
+        <value name="nodePathNew">1.1.1.0.2.0.1.0.3.0.0.0.1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">18</number>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.0.1</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/0/1/0" javaclass="com.wm.util.Values">
+        <value name="name">IF</value>
+        <value name="itemType">CONTROLS</value>
+        <value name="nodePathNew">1.1.1.0.2.0.1.0.3.0.0.0.1.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">18</number>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.0.1.0</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/0/1/0/0" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">TRANSFORM</value>
+        <number name="ui_step_index" type="Long">14</number>
+        <value name="nodePathNew">1.1.1.0.2.0.1.0.3.0.0.0.1.0.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">19</number>
+        <array name="map" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapDelete" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="transformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.0.1.0.0</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/0/1/0/0/0" javaclass="com.wm.util.Values">
+        <value name="itemType">SERVICES</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.0.1.0.0.0</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/0/1/0/0/1" javaclass="com.wm.util.Values">
+        <value name="itemType">SERVICES</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.0.1.0.0.1</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/0/1/0/0/2" javaclass="com.wm.util.Values">
+        <value name="itemType">SERVICES</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.0.1.0.0.2</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/0/1/0/0/3" javaclass="com.wm.util.Values">
+        <value name="itemType">SERVICES</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.0.1.0.0.3</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/0/1/0/0/4" javaclass="com.wm.util.Values">
+        <value name="itemType">SERVICES</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.0.1.0.0.4</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/0/1/0/0/5" javaclass="com.wm.util.Values">
+        <value name="itemType">SERVICES</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.0.1.0.0.5</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/0/1/1" javaclass="com.wm.util.Values">
+        <value name="name">ELSE</value>
+        <value name="itemType">CONTROLS</value>
+        <value name="nodePathNew">1.1.1.0.2.0.1.0.3.0.0.0.2.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">20</number>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.0.1.1</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/0/1/1/0" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">TRANSFORM</value>
+        <number name="ui_step_index" type="Long">16</number>
+        <value name="nodePathNew">1.1.1.0.2.0.1.0.3.0.0.0.2.0.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">21</number>
+        <array name="map" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapDelete" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="transformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.0.1.1.0</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/0/1/1/0/0" javaclass="com.wm.util.Values">
+        <value name="itemType">SERVICES</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.0.1.1.0.0</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/0/1/1/0/1" javaclass="com.wm.util.Values">
+        <value name="itemType">SERVICES</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.0.1.1.0.1</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/0/1/1/0/2" javaclass="com.wm.util.Values">
+        <value name="itemType">SERVICES</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.0.1.1.0.2</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/0/1/1/0/3" javaclass="com.wm.util.Values">
+        <value name="itemType">SERVICES</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.0.1.1.0.3</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/0/1/1/0/4" javaclass="com.wm.util.Values">
+        <value name="itemType">SERVICES</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.0.1.1.0.4</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/0/1/1/0/5" javaclass="com.wm.util.Values">
+        <value name="itemType">SERVICES</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.0.1.1.0.5</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/1" javaclass="com.wm.util.Values">
+        <value name="name">ELSE</value>
+        <value name="itemType">CONTROLS</value>
+        <value name="nodePathNew">1.1.1.0.2.0.1.0.3.0.1.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">22</number>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.1</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/1/0" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">TRANSFORM</value>
+        <number name="ui_step_index" type="Long">18</number>
+        <value name="nodePathNew">1.1.1.0.2.0.1.0.3.0.1.0.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">23</number>
+        <array name="map" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapDelete" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="transformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.1.0</value>
+      </record>
+      <null name="/2/1/1/0/2/0/1/0/3/0/0/1/0/0"/>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/1/1" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">IF</value>
+        <record name="config" javaclass="com.wm.util.Values">
+          <value name="displayLabel">field_name</value>
+          <value name="toolTipLabel">name</value>
+          <Boolean name="showLeafLabelOnly">true</Boolean>
+          <Boolean name="allowConstantValueInput">true</Boolean>
+          <Boolean name="focusOnLoad">true</Boolean>
+          <Boolean name="specialCharsAllowed">false</Boolean>
+          <Boolean name="resetOnfocusout">true</Boolean>
+          <Boolean name="displayIcon">true</Boolean>
+        </record>
+        <value name="nodePathNew">1.1.1.0.2.0.1.0.3.0.1.0.1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">24</number>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.1.1</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/1/1/0" javaclass="com.wm.util.Values">
+        <value name="name">IF</value>
+        <value name="itemType">CONTROLS</value>
+        <value name="nodePathNew">1.1.1.0.2.0.1.0.3.0.1.0.1.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">24</number>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.1.1.0</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/1/1/0/0" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">TRANSFORM</value>
+        <number name="ui_step_index" type="Long">25</number>
+        <value name="nodePathNew">1.1.1.0.2.0.1.0.3.0.1.0.1.0.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">25</number>
+        <array name="map" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapDelete" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="transformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.1.1.0.0</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/1/1/0/0/0" javaclass="com.wm.util.Values">
+        <value name="itemType">SERVICES</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.1.1.0.0.0</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/1/1/0/0/1" javaclass="com.wm.util.Values">
+        <value name="itemType">SERVICES</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.1.1.0.0.1</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/1/1/0/0/2" javaclass="com.wm.util.Values">
+        <value name="itemType">SERVICES</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.1.1.0.0.2</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/1/1/0/0/3" javaclass="com.wm.util.Values">
+        <value name="itemType">SERVICES</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.1.1.0.0.3</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/1/1/0/0/4" javaclass="com.wm.util.Values">
+        <value name="itemType">SERVICES</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.1.1.0.0.4</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/1/1/1" javaclass="com.wm.util.Values">
+        <value name="name">ELSE</value>
+        <value name="itemType">CONTROLS</value>
+        <value name="nodePathNew">1.1.1.0.2.0.1.0.3.0.1.0.2.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">26</number>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.1.1.1</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/1/1/1/0" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">TRANSFORM</value>
+        <number name="ui_step_index" type="Long">27</number>
+        <value name="nodePathNew">1.1.1.0.2.0.1.0.3.0.1.0.2.0.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">27</number>
+        <array name="map" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapDelete" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="transformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.1.1.1.0</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/1/1/1/0/0" javaclass="com.wm.util.Values">
+        <value name="itemType">SERVICES</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.1.1.1.0.0</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/1/1/1/0/1" javaclass="com.wm.util.Values">
+        <value name="itemType">SERVICES</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.1.1.1.0.1</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/1/1/1/0/2" javaclass="com.wm.util.Values">
+        <value name="itemType">SERVICES</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.1.1.1.0.2</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/1/1/1/0/3" javaclass="com.wm.util.Values">
+        <value name="itemType">SERVICES</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.1.1.1.0.3</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/1/1/1/0/4" javaclass="com.wm.util.Values">
+        <value name="itemType">SERVICES</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">substring</value>
+          <value name="serviceName">pub.string:substring</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.1.1.1.0.4</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/0/1/2" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">TRANSFORM</value>
+        <number name="ui_step_index" type="Long">21</number>
+        <value name="nodePathNew">1.1.1.0.2.0.1.0.3.0.1.0.3</value>
+        <number name="nodeIndex" type="Long">3</number>
+        <number name="lineNumberForDebug" type="Long">28</number>
+        <array name="map" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapDelete" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="transformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.0.1.2</value>
+      </record>
+      <null name="/2/1/1/0/2/0/1/0/3/0/0/1/2/0"/>
+      <record name="/2/1/1/0/2/0/1/0/3/0/1" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">Flow</value>
+          <value name="groupName">flow</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">debugLog</value>
+          <value name="serviceName">pub.flow:debugLog</value>
+          <value name="transformerSupport">false</value>
+        </record>
+        <number name="ui_step_index" type="Long">29</number>
+        <value name="nodePathNew">1.1.1.0.2.0.1.0.3.0.2</value>
+        <number name="nodeIndex" type="Long">2</number>
+        <number name="lineNumberForDebug" type="Long">29</number>
+        <null name="mapSet"/>
+        <null name="outputMapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <Boolean name="xmlMapsetSupported">true</Boolean>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.1</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/2" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">PACKAGES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">sftp</value>
+          <value name="groupName">sftp;1.0</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="description">com.dachser:getFile</value>
+          <value name="serviceName">com.dachser:getFile</value>
+          <value name="displayName">getFile</value>
+        </record>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
+        <number name="ui_step_index" type="Long">25</number>
+        <value name="nodePathNew">0.1.1.0.2.0.1.0.3.0.3</value>
+        <number name="nodeIndex" type="Long">3</number>
+        <number name="lineNumberForDebug" type="Long">29</number>
+        <Boolean name="serviceReferenceResolved">false</Boolean>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.2</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/3" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">TRANSFORM</value>
+        <number name="ui_step_index" type="Long">26</number>
+        <value name="nodePathNew">0.1.1.0.2.0.1.0.3.0.4</value>
+        <number name="nodeIndex" type="Long">4</number>
+        <number name="lineNumberForDebug" type="Long">30</number>
+        <array name="map" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapDelete" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="transformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.3</value>
+      </record>
+      <null name="/2/1/1/0/2/0/1/0/3/0/3/0"/>
+      <record name="/2/1/1/0/2/0/1/0/3/0/4" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">PACKAGES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">webservice</value>
+          <value name="groupName">webservice;1.0</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="description">com.dachser:invokeWebservice</value>
+          <value name="serviceName">com.dachser:invokeWebservice</value>
+          <value name="displayName">invokeWebservice</value>
+        </record>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
+        <number name="ui_step_index" type="Long">27</number>
+        <value name="nodePathNew">0.1.1.0.2.0.1.0.3.0.5</value>
+        <number name="nodeIndex" type="Long">5</number>
+        <number name="lineNumberForDebug" type="Long">31</number>
+        <Boolean name="allowCustomOperations">true</Boolean>
+        <Boolean name="serviceReferenceResolved">false</Boolean>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.4</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/5" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">Flow</value>
+          <value name="groupName">flow</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">debugLog</value>
+          <value name="serviceName">pub.flow:debugLog</value>
+          <value name="transformerSupport">false</value>
+        </record>
+        <number name="ui_step_index" type="Long">28</number>
+        <value name="nodePathNew">0.1.1.0.2.0.1.0.3.0.6</value>
+        <number name="nodeIndex" type="Long">6</number>
+        <number name="lineNumberForDebug" type="Long">32</number>
+        <null name="mapSet"/>
+        <null name="outputMapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <Boolean name="xmlMapsetSupported">true</Boolean>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.5</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/6" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">IF</value>
+        <record name="config" javaclass="com.wm.util.Values">
+          <value name="displayLabel">field_name</value>
+          <value name="toolTipLabel">name</value>
+          <Boolean name="showLeafLabelOnly">true</Boolean>
+          <Boolean name="allowConstantValueInput">true</Boolean>
+          <Boolean name="focusOnLoad">true</Boolean>
+          <Boolean name="specialCharsAllowed">false</Boolean>
+          <Boolean name="resetOnfocusout">true</Boolean>
+          <Boolean name="displayIcon">true</Boolean>
+        </record>
+        <value name="nodePathNew">0.1.1.0.2.0.1.0.3.0.7</value>
+        <number name="nodeIndex" type="Long">7</number>
+        <number name="lineNumberForDebug" type="Long">33</number>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.6</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/6/0" javaclass="com.wm.util.Values">
+        <value name="name">IF</value>
+        <value name="itemType">CONTROLS</value>
+        <value name="nodePathNew">0.1.1.0.2.0.1.0.3.0.7.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">33</number>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.6.0</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/6/0/0" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">Flow</value>
+          <value name="groupName">flow</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">debugLog</value>
+          <value name="serviceName">pub.flow:debugLog</value>
+          <value name="transformerSupport">false</value>
+        </record>
+        <value name="nodePathNew">0.1.1.0.2.0.1.0.3.0.7.0.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">34</number>
+        <null name="mapSet"/>
+        <null name="outputMapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <number name="ui_step_index" type="Long">31</number>
+        <Boolean name="xmlMapsetSupported">true</Boolean>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.6.0.0</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/6/0/1" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">PACKAGES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">smtp</value>
+          <value name="groupName">smtp;1.0</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="description">com.dachser:processException</value>
+          <value name="serviceName">com.dachser:processException</value>
+          <value name="displayName">processException</value>
+        </record>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
+        <number name="ui_step_index" type="Long">31</number>
+        <value name="nodePathNew">0.1.1.0.2.0.1.0.3.0.7.0.1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">35</number>
+        <Boolean name="xmlMapsetSupported">true</Boolean>
+        <Boolean name="serviceReferenceResolved">false</Boolean>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.6.0.1</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/7" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">PACKAGES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">sftp</value>
+          <value name="groupName">sftp;1.0</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="description">com.dachser:moveFile</value>
+          <value name="serviceName">com.dachser:moveFile</value>
+          <value name="displayName">moveFile</value>
+        </record>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
+        <number name="ui_step_index" type="Long">32</number>
+        <value name="nodePathNew">0.1.1.0.2.0.1.0.3.0.8</value>
+        <number name="nodeIndex" type="Long">8</number>
+        <number name="lineNumberForDebug" type="Long">36</number>
+        <Boolean name="serviceReferenceResolved">false</Boolean>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.7</value>
+      </record>
+      <record name="/2/1/1/0/2/0/1/0/3/0/8" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">TRANSFORM</value>
+        <value name="nodePathNew">0.1.1.0.2.0.1.0.3.0.9</value>
+        <number name="nodeIndex" type="Long">9</number>
+        <number name="lineNumberForDebug" type="Long">37</number>
+        <array name="map" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapDelete" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="transformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <value name="nodePathForDebug">1.1.1.0.2.0.1.0.3.0.8</value>
+      </record>
+      <null name="/2/1/1/0/2/0/1/0/3/0/8/0"/>
+      <record name="/2/1/1/0/3" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">IF</value>
+        <record name="config" javaclass="com.wm.util.Values">
+          <value name="displayLabel">field_name</value>
+          <value name="toolTipLabel">name</value>
+          <Boolean name="showLeafLabelOnly">true</Boolean>
+          <Boolean name="allowConstantValueInput">true</Boolean>
+          <Boolean name="focusOnLoad">true</Boolean>
+          <Boolean name="specialCharsAllowed">false</Boolean>
+          <Boolean name="resetOnfocusout">true</Boolean>
+          <Boolean name="displayIcon">true</Boolean>
+        </record>
+        <value name="nodePathNew">0.1.1.0.3</value>
+        <number name="nodeIndex" type="Long">3</number>
+        <number name="lineNumberForDebug" type="Long">38</number>
+        <value name="nodePathForDebug">1.1.1.0.3</value>
+      </record>
+      <record name="/2/1/1/0/3/0" javaclass="com.wm.util.Values">
+        <value name="name">IF</value>
+        <value name="itemType">CONTROLS</value>
+        <value name="nodePathNew">0.1.1.0.3.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">38</number>
+        <value name="nodePathForDebug">1.1.1.0.3.0</value>
+      </record>
+      <record name="/2/1/1/0/3/0/0" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">Flow</value>
+          <value name="groupName">flow</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">debugLog</value>
+          <value name="serviceName">pub.flow:debugLog</value>
+          <value name="transformerSupport">false</value>
+        </record>
+        <value name="nodePathNew">0.1.1.0.3.0.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">39</number>
+        <null name="mapSet"/>
+        <null name="outputMapSet"/>
+        <Boolean name="xmlMapsetSupported">true</Boolean>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">1.1.1.0.3.0.0</value>
+      </record>
+      <record name="/2/1/1/0/3/0/1" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">PACKAGES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">smtp</value>
+          <value name="groupName">smtp;1.0</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="description">com.dachser:processException</value>
+          <value name="serviceName">com.dachser:processException</value>
+          <value name="displayName">processException</value>
+        </record>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
+        <number name="ui_step_index" type="Long">37</number>
+        <value name="nodePathNew">0.1.1.0.3.0.1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">40</number>
+        <Boolean name="serviceReferenceResolved">false</Boolean>
+        <Boolean name="allowCustomOperations">true</Boolean>
+        <value name="nodePathForDebug">1.1.1.0.3.0.1</value>
+      </record>
+      <record name="/3" javaclass="com.wm.util.Values">
+        <value name="name">CATCH</value>
+        <value name="itemType">CONTROLS</value>
+        <value name="nodePathNew">1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">41</number>
+        <value name="nodePathForDebug">2</value>
+      </record>
+      <record name="/3/0" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">Flow</value>
+          <value name="groupName">flow</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">getLastFailureCaught</value>
+          <value name="serviceName">pub.flow:getLastFailureCaught</value>
+          <value name="transformerSupport">false</value>
+        </record>
+        <number name="ui_step_index" type="Long">42</number>
+        <value name="nodePathNew">1.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">42</number>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">2.0</value>
+      </record>
+      <record name="/3/1" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">Flow</value>
+          <value name="groupName">flow</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">debugLog</value>
+          <value name="serviceName">pub.flow:debugLog</value>
+          <value name="transformerSupport">false</value>
+        </record>
+        <number name="ui_step_index" type="Long">43</number>
+        <value name="nodePathNew">1.1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">43</number>
+        <null name="mapSet"/>
+        <null name="outputMapSet"/>
+        <Boolean name="xmlMapsetSupported">true</Boolean>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">2.1</value>
+      </record>
+      <record name="/3/2" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">PACKAGES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">smtp</value>
+          <value name="groupName">smtp;1.0</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="description">com.dachser:processException</value>
+          <value name="serviceName">com.dachser:processException</value>
+          <value name="displayName">processException</value>
+        </record>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
+        <number name="ui_step_index" type="Long">44</number>
+        <value name="nodePathNew">1.2</value>
+        <number name="nodeIndex" type="Long">2</number>
+        <number name="lineNumberForDebug" type="Long">44</number>
+        <Boolean name="serviceReferenceResolved">false</Boolean>
+        <value name="nodePathForDebug">2.2</value>
+      </record>
+      <record name="/3/3" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">THROWERROR</value>
+        <value name="nodePathForDebug">2.3</value>
       </record>
     </record>
   </record>
