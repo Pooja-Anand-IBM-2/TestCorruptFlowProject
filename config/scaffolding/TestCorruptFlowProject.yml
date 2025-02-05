@@ -20,6 +20,10 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2033
+- serviceName: pub.alert:channels
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2033
 - serviceName: com.dachser:readFileList
   packages:
   - name: TestCorruptFlowProject
