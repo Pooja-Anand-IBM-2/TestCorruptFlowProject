@@ -16,3 +16,43 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2033
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2033
+- serviceName: com.dachser:readFileList
+  packages:
+  - name: TestCorruptFlowProject
+    version: "1.0"
+- serviceName: pub.string:substring
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2033
+- serviceName: pub.string:length
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2033
+- serviceName: pub.math:subtractInts
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2033
+- serviceName: com.dachser:getFile
+  packages:
+  - name: TestCorruptFlowProject
+    version: "1.0"
+- serviceName: com.dachser:invokeWebservice
+  packages:
+  - name: TestCorruptFlowProject
+    version: "1.0"
+- serviceName: com.dachser:processException
+  packages:
+  - name: TestCorruptFlowProject
+    version: "1.0"
+- serviceName: com.dachser:moveFile
+  packages:
+  - name: TestCorruptFlowProject
+    version: "1.0"
+- serviceName: pub.flow:getLastFailureCaught
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2033
