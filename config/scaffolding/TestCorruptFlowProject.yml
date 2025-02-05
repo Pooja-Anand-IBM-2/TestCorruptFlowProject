@@ -7,3 +7,12 @@ packages:
   gitUrl: https://github.com/Pooja-Anand-IBM-2
   gitUsername: Pooja-Anand-IBM-2
   gitBranch: main
+services:
+- serviceName: project.testcorruptflow.integrations:e1
+  packages:
+  - name: TestCorruptFlowProject
+    version: "1.0"
+- serviceName: pub.date:calculateDateDifference
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2033
